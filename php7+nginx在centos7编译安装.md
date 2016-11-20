@@ -133,12 +133,12 @@ chmod +x /etc/rc.d/init.d/php-fpm #添加执行权限
 
 chkconfig php-fpm on #设置开机启动 
 
-配置nginx/conf/nginx.conf
-location ~ \.php$ {
-            root           html;
-            fastcgi_pass   127.0.0.1:9000;
-            fastcgi_index  index.php;
-        #    fastcgi_param  SCRIPT_FILENAME  /scripts$fastcgi_script_name;
-            fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
-            include        fastcgi_params;
-        }
+##配置nginx/conf/nginx.conf
+    location ~ \.php$ {
+                root           html;
+                fastcgi_pass   127.0.0.1:9000;
+                fastcgi_index  index.php;
+            #    fastcgi_param  SCRIPT_FILENAME  /scripts$fastcgi_script_name;
+                fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+                include        fastcgi_params;
+            }

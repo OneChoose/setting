@@ -10,7 +10,7 @@ cd pcre-8.37
 make
 make install
 
-下面是nginx的依赖软件 
+##下面是nginx的依赖软件 
 wget http://www.openssl.org/source/openssl-1.0.1q.tar.gz
 tar xf openssl-1.0.1q.tar.gz 
 cd openssl-1.0.1q
@@ -31,19 +31,18 @@ wget http://nginx.org/download/nginx-1.8.0.tar.gz
 tar zxvf nginx-1.8.0.tar.gz
 cd nginx-1.8.0
 ./configure --prefix=/usr/local/nginx --without-http_memcached_module --user=www --group=www --with-http_stub_status_module --with-http_ssl_module --with-http_gzip_static_module --with-openssl=/root/openssl-1.0.1q --with-zlib=/root/zlib-1.2.8 --with-pcre=/root/pcre-8.37
-###--with-openssl=/root/openssl-1.0.1q --with-zlib=/root/zlib-1.2.8 --with-pcre=/root/pcre-8.37这里主要是指定的源码目录，不是安装目录
+  --with-openssl=/root/openssl-1.0.1q --with-zlib=/root/zlib-1.2.8 --with-pcre=/root/pcre-8.37这里主要是指定的源码目录，不是安装目录
 make && make install
 
-以上nginx安装
-
-
- 以下是安装php
+##以上nginx安装
+  
+##以下是安装php
 wget ftp://mcrypt.hellug.gr/pub/crypto/mcrypt/libmcrypt/libmcrypt-2.5.7.tar.gz
 tar xf libmcrypt-2.5.7.tar.gz
 cd libmcrypt-2.5.7
 ./configure --prefix=/usr/local/libmcrypt
 make && make install
-/sbin/ldconfig  ###这是什么，反正我也不知道，就是安装好libmcrypt，并且在这个目录下运行包含下面几条命令就不会报错：configure: error: mcrypt.h not found. Please reinstall libmcrypt
+  /sbin/ldconfig  ###这是什么，反正我也不知道，就是安装好libmcrypt，并且在这个目录下运行包含下面几条命令就不会报错：configure: error: mcrypt.h not found. Please reinstall libmcrypt
 cd libltdl/   
 ./configure --enable-ltdl-install
 make

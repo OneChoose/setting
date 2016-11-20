@@ -1,6 +1,6 @@
 # php7+nginx在centos7编译安装
 小整理了一哈.
-安装一下源 
+##安装一下源 
 yum install -y apr* autoconf automake bison bzip2 bzip2* cloog-ppl compat* cpp curl curl-devel fontconfig fontconfig-devel freetype freetype* freetype-devel gcc gcc-c++ gtk+-devel gd gettext gettext-devel glibc kernel kernel-headers keyutils keyutils-libs-devel krb5-devel libcom_err-devel libpng libpng-devel libjpeg* libsepol-devel libselinux-devel libstdc++-devel libtool* libgomp libxml2 libxml2-devel libXpm* libtiff libtiff* make mpfr ncurses* ntp openssl openssl-devel patch pcre-devel perl php-common php-gd policycoreutils telnet t1lib t1lib* nasm nasm* wget zlib-devel
 
 wget ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-8.37.tar.gz
@@ -42,11 +42,11 @@ tar xf libmcrypt-2.5.7.tar.gz
 cd libmcrypt-2.5.7
 ./configure --prefix=/usr/local/libmcrypt
 make && make install
-  /sbin/ldconfig  ###这是什么，反正我也不知道，就是安装好libmcrypt，并且在这个目录下运行包含下面几条命令就不会报错：configure: error: mcrypt.h not found. Please reinstall libmcrypt
-cd libltdl/   
-./configure --enable-ltdl-install
-make
-make install 
+    /sbin/ldconfig  ###这是什么，反正我也不知道，就是安装好libmcrypt，并且在这个目录下运行包含下面几条命令就不会报错：configure: error:  mcrypt.h not found. Please reinstall libmcrypt
+    cd libltdl/   
+    ./configure --enable-ltdl-install
+    make
+    make install 
 
 wget https://gmplib.org/download/gmp/gmp-6.1.0.tar.bz2
 tar xf gmp-6.1.0.tar.bz2 
@@ -76,36 +76,36 @@ make && make install
 --enable-exif \
 --with-pcre-dir \
 --enable-ftp \
---with-gd \
---with-jpeg-dir \
---with-png-dir \
---with-freetype-dir \
---with-gettext \
---with-gmp \
---with-mhash \
---enable-mbstring \
---with-libmbfl \
---with-onig \
---enable-pdo \
---with-pdo-mysql \
---with-zlib-dir \
---with-readline \
---enable-session \
---enable-shmop \
---enable-simplexml \
---enable-sockets \
---enable-sysvmsg \
---enable-sysvsem \
---enable-sysvshm \
---enable-wddx \
---with-libxml-dir \
---with-xsl \
---enable-zip \
---enable-mysqlnd \
---with-mysqli \
-make && make install
-配置php
-cp php.ini-production /usr/local/php/etc/php.ini  #复制php配置文件到安装目录
+    --with-gd \
+    --with-jpeg-dir \
+    --with-png-dir \
+    --with-freetype-dir \
+    --with-gettext \
+    --with-gmp \
+    --with-mhash \
+    --enable-mbstring \
+    --with-libmbfl \
+    --with-onig \
+    --enable-pdo \
+    --with-pdo-mysql \
+    --with-zlib-dir \
+    --with-readline \
+    --enable-session \
+    --enable-shmop \
+    --enable-simplexml \
+    --enable-sockets \
+    --enable-sysvmsg \
+    --enable-sysvsem \
+    --enable-sysvshm \
+    --enable-wddx \
+    --with-libxml-dir \
+    --with-xsl \
+    --enable-zip \
+    --enable-mysqlnd \
+    --with-mysqli \
+    make && make install
+##配置php
+    cp php.ini-production /usr/local/php/etc/php.ini  #复制php配置文件到安装目录
 
 rm -rf /etc/php.ini  #删除系统自带配置文件
 

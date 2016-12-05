@@ -17,4 +17,5 @@
   5.mount -t vboxsf share（这是指主机文件夹名） share（这是指终端挂载点名）,我这里是mount -t vboxsf share /mnt/share/
   
   6.假如您不想每一次都手动挂载，可以在linux中/etc/fstab下添加一项： share /mnt/share vboxsf rw,gid=100,uid=1000,auto 0 0
-  
+
+## 注释 你需要下载VirtualBox和安装VirtualBox对应的扩展版本，官网：Extension Pack  All Platforms 是对应的扩展版本指定链接

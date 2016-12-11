@@ -3,8 +3,8 @@
     1.安装工具：yum install gcc kernel-devel -y,重启系统
   
     2.将光盘加入
-        点击virtualbox设置->存储->控制器：IDE->属性分配光驱->选择D:\Program Files\Oracle\VirtualBox\VBoxGuestAdditions.iso(这是我virtualbox安装路径下面的文件)
-      
+        点击virtualbox设置->存储->控制器：IDE->属性分配光驱->选择D:\Program Files\Oracle\VirtualBox\VBoxGuestAdditions.iso(这是我virtualbox安装路径下面的文件)    ####如果是mac到这里下载http://download.virtualbox.org/
+      
     3.安装 VBoxGuestAdditions.iso镜像并挂载
   
         3.1 mount /dev/cdrom /cdrom (该cdrom是我在/目录下创建的文件夹);

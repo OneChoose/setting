@@ -48,34 +48,34 @@ make && make install
     make
     make install 
 
-wget https://gmplib.org/download/gmp/gmp-6.1.0.tar.bz2
-tar xf gmp-6.1.0.tar.bz2 
-cd gmp-6.1.0
-./configure --prefix=/usr/local/gmp
-make && make install
+    wget https://gmplib.org/download/gmp/gmp-6.1.0.tar.bz2
+    tar xf gmp-6.1.0.tar.bz2 
+    cd gmp-6.1.0
+    ./configure --prefix=/usr/local/gmp
+    make && make install
 
-./configure \
---prefix=/usr/local/php/7.0.0 \
---with-config-file-path=/usr/local/php/7.0.0/etc \
---with-config-file-scan-dir=/usr/local/php/7.0.0/etc/conf.d \
---enable-fpm \
---with-fpm-user=web \
---with-fpm-group=www \
---enable-soap \
---with-openssl \
---with-openssl-dir \
---with-mcrypt \
---with-pcre-regex \
---with-zlib \
---with-iconv \
---with-bz2 \
---enable-calendar \
---with-curl \
---with-cdb \
---enable-dom \
---enable-exif \
---with-pcre-dir \
---enable-ftp \
+    ./configure \
+    --prefix=/usr/local/php/7.0.0 \
+    --with-config-file-path=/usr/local/php/7.0.0/etc \
+    --with-config-file-scan-dir=/usr/local/php/7.0.0/etc/conf.d \
+    --enable-fpm \
+    --with-fpm-user=web \
+    --with-fpm-group=www \
+    --enable-soap \
+    --with-openssl \
+    --with-openssl-dir \
+    --with-mcrypt \
+    --with-pcre-regex \
+    --with-zlib \
+    --with-iconv \
+    --with-bz2 \
+    --enable-calendar \
+    --with-curl \
+    --with-cdb \
+    --enable-dom \
+    --enable-exif \
+    --with-pcre-dir \
+    --enable-ftp \
     --with-gd \
     --with-jpeg-dir \
     --with-png-dir \
@@ -94,16 +94,16 @@ make && make install
     --enable-shmop \
     --enable-simplexml \
     --enable-sockets \
-    --enable-sysvmsg \
-    --enable-sysvsem \
-    --enable-sysvshm \
-    --enable-wddx \
-    --with-libxml-dir \
-    --with-xsl \
-    --enable-zip \
-    --enable-mysqlnd \
-    --with-mysqli \
-    make && make install
+--enable-sysvmsg \
+--enable-sysvsem \
+--enable-sysvshm \
+--enable-wddx \
+--with-libxml-dir \
+--with-xsl \
+--enable-zip \
+--enable-mysqlnd \
+--with-mysqli \
+make && make install
 ##配置php
     cp php.ini-production /usr/local/php/etc/php.ini  #复制php配置文件到安装目录
 

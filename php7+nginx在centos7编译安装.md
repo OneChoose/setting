@@ -59,7 +59,7 @@ make && make install
     --with-config-file-path=/usr/local/php/7.0.0/etc \
     --with-config-file-scan-dir=/usr/local/php/7.0.0/etc/conf.d \
     --enable-fpm \
-    --with-fpm-user=web \
+    --with-fpm-user=www \
     --with-fpm-group=www \
     --enable-soap \
     --with-openssl \

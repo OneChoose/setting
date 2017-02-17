@@ -2,8 +2,8 @@
 
 #建议为 apache 创建一个用户和用户组
 
-    groupadd deployer
-    useradd -g deployer deployer
+        groupadd deployer
+        useradd -g deployer deployer
     
 ##优先安装apr
     tar -zxvf apr-1.5.1.tar.gz

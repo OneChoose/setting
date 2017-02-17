@@ -4,16 +4,13 @@
 
         groupadd deployer
         useradd -g deployer deployer
-        
-
-    1.安装工具：yum install gcc kernel-devel -y,重启系统
     
 ##优先安装apr
-    tar -zxvf apr-1.5.1.tar.gz
-    cd apr-1.5.1
-    ./configure --prefix=/usr/local/apr
-    make
-    make install
+                tar -zxvf apr-1.5.1.tar.gz
+                cd apr-1.5.1
+                ./configure --prefix=/usr/local/apr
+                make
+                make install
     
 ##然后安装apr-util
     tar -zxvf apr-util-1.5.4

@@ -27,22 +27,22 @@
   useradd -g www www -s /bin/false
 
 
-  wget http://nginx.org/download/nginx-1.8.0.tar.gz
-  tar zxvf nginx-1.8.0.tar.gz
-  cd nginx-1.8.0
-  ./configure --prefix=/usr/local/nginx --without-http_memcached_module --user=www --group=www --with-http_stub_status_module --with-http_ssl_module --with-http_gzip_static_module --with-openssl=/root/openssl-1.0.1q --with-zlib=/root/zlib-1.2.8 --with-pcre=/root/pcre-8.37
-  --with-openssl=/root/openssl-1.0.1q --with-zlib=/root/zlib-1.2.8 --with-pcre=/root/pcre-8.37这里主要是指定的源码目录，不是安装目录
-make && make install
+    wget http://nginx.org/download/nginx-1.8.0.tar.gz
+    tar zxvf nginx-1.8.0.tar.gz
+    cd nginx-1.8.0
+    ./configure --prefix=/usr/local/nginx --without-http_memcached_module --user=www --group=www --with-http_stub_status_module --with-http_ssl_module --with-http_gzip_static_module --with-openssl=/root/openssl-1.0.1q --with-zlib=/root/zlib-1.2.8 --with-pcre=/root/pcre-8.37
+    --with-openssl=/root/openssl-1.0.1q --with-zlib=/root/zlib-1.2.8 --with-pcre=/root/pcre-8.37这里主要是指定的源码目录，不是安装目录
+    make && make install
 
-##以上nginx安装
-  
-##以下是安装php
-  wget ftp://mcrypt.hellug.gr/pub/crypto/mcrypt/libmcrypt/libmcrypt-2.5.7.tar.gz
-  tar xf libmcrypt-2.5.7.tar.gz
-  cd libmcrypt-2.5.7
-  ./configure --prefix=/usr/local/libmcrypt
-  make && make install
-      /sbin/ldconfig  ###这是什么，反正我也不知道，就是安装好libmcrypt，并且在这个目录下运行包含下面几条命令就不会报错：configure: error:  mcrypt.h not found. Please reinstall libmcrypt
+    ##以上nginx安装
+
+    ##以下是安装php
+    wget ftp://mcrypt.hellug.gr/pub/crypto/mcrypt/libmcrypt/libmcrypt-2.5.7.tar.gz
+    tar xf libmcrypt-2.5.7.tar.gz
+    cd libmcrypt-2.5.7
+    ./configure --prefix=/usr/local/libmcrypt
+    make && make install
+    /sbin/ldconfig  ###这是什么，反正我也不知道，就是安装好libmcrypt，并且在这个目录下运行包含下面几条命令就不会报错：configure: error:  mcrypt.h not found. Please reinstall libmcrypt
     cd libltdl/   
     ./configure --enable-ltdl-install
     make
@@ -104,7 +104,7 @@ make && make install
     --enable-mysqlnd \
     --with-mysqli \
     make && make install
-##配置php
+    ##配置php
     cp php.ini-production /usr/local/php/etc/php.ini  #复制php配置文件到安装目录
 
     rm -rf /etc/php.ini  #删除系统自带配置文件
@@ -133,12 +133,12 @@ make && make install
 
     chkconfig php-fpm on #设置开机启动 
 
-##配置nginx/conf/nginx.conf
+    ##配置nginx/conf/nginx.conf
     location ~ \.php$ {
-                root           html;
-                fastcgi_pass   127.0.0.1:9000;
-                fastcgi_index  index.php;
-            #    fastcgi_param  SCRIPT_FILENAME  /scripts$fastcgi_script_name;
-                fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
-                include        fastcgi_params;
-            }
+    root           html;
+    fastcgi_pass   127.0.0.1:9000;
+    fastcgi_index  index.php;
+    #    fastcgi_param  SCRIPT_FILENAME  /scripts$fastcgi_script_name;
+    fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+    include        fastcgi_params;
+    }

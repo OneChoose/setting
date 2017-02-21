@@ -11,21 +11,20 @@
   make install
 
 ##下面是nginx的依赖软件 
-  wget http://www.openssl.org/source/openssl-1.0.1q.tar.gz
-  tar xf openssl-1.0.1q.tar.gz 
-  cd openssl-1.0.1q
-  ./config --prefix=/usr/local/openssl
-  make && make install
+    wget http://www.openssl.org/source/openssl-1.0.1q.tar.gz
+    tar xf openssl-1.0.1q.tar.gz 
+    cd openssl-1.0.1q
+    ./config --prefix=/usr/local/openssl
+    make && make install
 
-  wget http://zlib.net/zlib-1.2.8.tar.gz
-  tar zxvf zlib-1.2.8.tar.gz
-  cd zlib-1.2.8
-  ./configure --prefix=/usr/local/zlib
-  make && make install
+    wget http://zlib.net/zlib-1.2.8.tar.gz
+    tar zxvf zlib-1.2.8.tar.gz
+    cd zlib-1.2.8
+    ./configure --prefix=/usr/local/zlib
+    make && make install
 
-  groupadd www
-  useradd -g www www -s /bin/false
-
+    groupadd www
+    useradd -g www www -s /bin/false
 
     wget http://nginx.org/download/nginx-1.8.0.tar.gz
     tar zxvf nginx-1.8.0.tar.gz

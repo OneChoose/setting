@@ -35,3 +35,11 @@
     cd /usr/local/tomcat/bin
     ###其中./version.sh 可以查看tomcat的信息
     ##./startup.sh 运行tomcat
+    
+ ## jenkins安装
+    wget http://mirrors.jenkins-ci.org/war-stable/latest/jenkins.war
+    把jenkins的war包，移动到 /usr/local/tomcat/webapps/目录下,我的tomcat放在 /usr/local下面的
+    ./startup.sh restart 重启过后，地址访问：http://127.0.0.1:8080/jenkins配置即可
+  
+ ## jenkins与gogs配置
+    jenkins需要配置安装git plus

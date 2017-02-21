@@ -1,23 +1,23 @@
 # php7+nginx在centos7编译安装
   小整理了一哈.
   ##安装一下源 
-  yum install -y apr* autoconf automake bison bzip2 bzip2* cloog-ppl compat* cpp curl curl-devel fontconfig fontconfig-devel freetype freetype* freetype-devel gcc gcc-c++ gtk+-devel gd gettext gettext-devel glibc kernel kernel-headers keyutils keyutils-libs-devel krb5-devel libcom_err-devel libpng libpng-devel libjpeg* libsepol-devel libselinux-devel libstdc++-devel libtool* libgomp libxml2 libxml2-devel libXpm* libtiff libtiff* make mpfr ncurses* ntp openssl openssl-devel patch pcre-devel perl php-common php-gd policycoreutils telnet t1lib t1lib* nasm nasm* wget zlib-devel
+    yum install -y apr* autoconf automake bison bzip2 bzip2* cloog-ppl compat* cpp curl curl-devel fontconfig fontconfig-devel freetype freetype* freetype-devel gcc gcc-c++ gtk+-devel gd gettext gettext-devel glibc kernel kernel-headers keyutils keyutils-libs-devel krb5-devel libcom_err-devel libpng libpng-devel libjpeg* libsepol-devel libselinux-devel libstdc++-devel libtool* libgomp libxml2 libxml2-devel libXpm* libtiff libtiff* make mpfr ncurses* ntp openssl openssl-devel patch pcre-devel perl php-common php-gd policycoreutils telnet t1lib t1lib* nasm nasm* wget zlib-devel
 
-  wget ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-8.37.tar.gz
-  tar zxvf pcre-8.37.tar.gz 
-  cd pcre-8.37
-  ./configure --prefix=/usr/local/pcre
-  make
-  make install
-
-##下面是nginx的依赖软件 
+##下面是nginx的依赖软件
+    wget ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-8.37.tar.gz
+    tar zxvf pcre-8.37.tar.gz 
+    cd pcre-8.37
+    ./configure --prefix=/usr/local/pcre
+    make
+    make install
+ 
     wget http://www.openssl.org/source/openssl-1.0.1q.tar.gz
     tar xf openssl-1.0.1q.tar.gz 
     cd openssl-1.0.1q
     ./config --prefix=/usr/local/openssl
     make && make install
 
-    wget http://zlib.net/zlib-1.2.8.tar.gz
+    wget https://nchc.dl.sourceforge.net/project/libpng/zlib/1.2.11/zlib-1.2.11.tar.gz
     tar zxvf zlib-1.2.8.tar.gz
     cd zlib-1.2.8
     ./configure --prefix=/usr/local/zlib

@@ -28,7 +28,7 @@
     branch.master.remote=origin
     branch.master.merge=refs/heads/master
 
-## 设置用户名密码 【产靠上面配置文件信息（remote.origin.url=http://username:password@115.28.103.142:3000/zhangyu/yc3.0.git）】
+## 设置用户名密码
     git remote set-url origin http://username:password@115.28.103.142:3000/zhangyu/yc3.0.git http://115.28.103.142:3000/zhangyu/yc3.0.git
 
 ## 基本命令

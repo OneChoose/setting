@@ -68,7 +68,7 @@
 
    git push origin master  Git会把master分支推送到远程库对应的远程分
    
-   gitignore不起作用的解决方法，手动创建[.gitignore]
-   git rm -r --cached .
-   git add .
-   git commit -m 'update .gitignore'
+## gitignore不起作用的解决方法，手动创建[.gitignore]
+    git rm -r --cached .
+    git add .
+    git commit -m 'update .gitignore'

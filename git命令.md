@@ -1,7 +1,35 @@
 ## 返回上一步操作
     git reset --hard 2e06dc9 ##2e06dc9上一次操作的版本号
-## 设置用户名密码
-    git remote set-url origin https://1812587695:123456@git.oschina.net/1812587695/laravel-hotel.git https://git.oschina.net/1812587695/laravel-hotel.git
+
+## 通过git config可以查看配置信息
+    $ git config --list
+    core.symlinks=false
+    core.autocrlf=true
+    core.fscache=true
+    color.diff=auto
+    color.status=auto
+    color.branch=auto
+    color.interactive=true
+    pack.packsizelimit=2g
+    help.format=html
+    http.sslcainfo=d:/Program Files (x86)/Git/mingw32/ssl/certs/ca-bundle.crt
+    diff.astextplain.textconv=astextplain
+    rebase.autosquash=true
+    user.email=1812587695@qq.com
+    user.name=大人物
+    core.repositoryformatversion=0
+    core.filemode=false
+    core.bare=false
+    core.logallrefupdates=true
+    core.symlinks=false
+    core.ignorecase=true
+    remote.origin.url=http://username:password@115.28.103.142:3000/zhangyu/yc3.0.git
+    remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+    branch.master.remote=origin
+    branch.master.merge=refs/heads/master
+    
+## 设置用户名密码 【产靠上面配置文件信息（remote.origin.url=http://username:password@115.28.103.142:3000/zhangyu/yc3.0.git）】
+    git remote set-url origin http://username:password@115.28.103.142:3000/zhangyu/yc3.0.git http://115.28.103.142:3000/zhangyu/yc3.0.git
 
 ## 基本命令
     Git基本常用命令如下：

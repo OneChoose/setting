@@ -140,3 +140,5 @@
     fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
     include        fastcgi_params;
     }
+
+# php-fpm平滑重启 kill -SIGUSR2 14106 ，是主进程号

@@ -20,8 +20,7 @@
     > cd /root/keepalived-1.3.4 ##这是解压目录下面的
     > cp ./keepalived/etc/init.d/keepalived /etc/init.d/
     > chmod 755 /etc/init.d/keepalived
-    
- # 三、keepalived的配置,两台虚拟主机上分别装上keepalived,keepalived的配置文件/etc/keepalived/keepalived.conf
+# 三、keepalived的配置,两台虚拟主机上分别装上keepalived,keepalived的配置文件/etc/keepalived/keepalived.conf
     #这是master192.168.0.228鸡配置
     global_defs {
        notification_email {
@@ -72,5 +71,5 @@
         }
     }
  
- # 启动、停止、重启
+# 启动、停止、重启
     > service keepalived start、stop、restart

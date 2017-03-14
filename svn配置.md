@@ -11,9 +11,9 @@
   --password的配置
   username=123456
 #第三部配置 启动
-svnserve -d -r /home/svn/
+  svnserve -d -r /home/svn/
 
-svn co svn://127.0.0.1/yaf /home/output/demo/
+  svn co svn://127.0.0.1/yaf /home/output/demo/
 
-svn add --force *
-svn commit -m 'a'
+  svn add --force *
+  svn commit -m 'a'

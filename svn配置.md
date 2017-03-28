@@ -15,5 +15,6 @@
 
   svn co svn://127.0.0.1/yaf /home/output/demo/
 
+  svn add . --no-ignore --force
   svn add --force *
   svn commit -m 'a'

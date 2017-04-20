@@ -103,3 +103,6 @@
 
 ## 将服务器代码更新到本地
     git checkout .
+    
+## 删除远程服务器分支
+    git push origin --delete yc3.0  yc3.0是远程分支

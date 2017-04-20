@@ -100,3 +100,6 @@
     git rm -r --cached .
     git add .
     git commit -m 'update .gitignore'
+
+## 将服务器代码更新到本地
+    git checkout .

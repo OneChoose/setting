@@ -3,7 +3,6 @@
  * 观察者模式
  */
  
- 
 class Paper{ /* 主题    */
     private $_observers = array();
  

@@ -106,3 +106,8 @@
     
 ## 删除远程服务器分支
     git push origin --delete yc3.0  yc3.0是远程分支
+    
+## .gitignore规则不生效的解决办法
+    git rm -r --cached .
+    git add .
+    git commit -m 'update .gitignore'

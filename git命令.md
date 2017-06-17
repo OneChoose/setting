@@ -111,3 +111,9 @@
     git rm -r --cached .
     git add .
     git commit -m 'update .gitignore'
+    
+## 错误解决：error: Untracked working tree file 'public/images/icon.gif' would be overwritten by merge.
+    git reset --hard HEAD    
+    git clean -f -d    
+    git pull
+    

@@ -1,7 +1,7 @@
-# MySQL优化三大方向
-① 优化MySQL所在服务器内核(此优化一般由运维人员完成)。
-② 对MySQL配置参数进行优化（my.cnf）此优化需要进行压力测试来进行参数调整。
-③ 对SQL语句以及表优化。
+	MySQL优化三大方向
+	① 优化MySQL所在服务器内核(此优化一般由运维人员完成)。
+	② 对MySQL配置参数进行优化（my.cnf）此优化需要进行压力测试来进行参数调整。
+	③ 对SQL语句以及表优化。
 MySQL参数优化
 1:MySQL 默认的最大连接数为 100，可以在 mysql 客户端使用以下命令查看
 mysql> show variables like 'max_connections';

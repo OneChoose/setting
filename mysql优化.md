@@ -18,7 +18,9 @@ MySQL参数优化
 
 	4:查看当前被使用的connections
 	mysql>show globle status like 'max_user_connections'
-	对MySQL语句性能优化的16条经验
+	
+对MySQL语句性能优化的16条经验
+
 	1 为查询缓存优化查询
 	2 EXPLAIN 我们的SELECT查询(可以查看执行的行数)
 	3 当只要一行数据时使用LIMIT 1

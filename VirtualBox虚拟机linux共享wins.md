@@ -10,7 +10,7 @@
     3.安装 VBoxGuestAdditions.iso镜像并挂载
   
         3.1 mount /dev/cdrom /cdrom (该cdrom是我在/目录下创建的文件夹);主要挂载的时候不要进入/cdrom目录，否则挂载不起的
-        
+    
         3.2 cd /cdrom; 
     
         3.3 sh ./VBoxLinuxAdditions.run;

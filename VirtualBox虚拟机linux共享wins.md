@@ -8,9 +8,13 @@
         
       
     3.安装 VBoxGuestAdditions.iso镜像并挂载
+    
         3.1 mount /dev/cdrom /cdrom (该cdrom是我在/目录下创建的文件夹);主要挂载的时候不要进入/cdrom目录，否则挂载不起的
+        
         3.2 cd /cdrom; 
+        
         3.3 sh ./VBoxLinuxAdditions.run;
+    
     
     4.配置共享文件夹,本地主机创建共享文件夹 d:\share,点击运行的虚拟机设备——>共享文件夹设置——>机器文件，添加共享文件夹——>选中创建的文件夹，填写名字，选择永久分配——>点击确定
   

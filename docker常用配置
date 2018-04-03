@@ -1,0 +1,4 @@
+docker run
+        
+        docker run -dit --privileged=true -v /mnt/share:/mnt --name nginx_web3 -p 80:80 docker.io/darenwu/web /bin/bash
+        

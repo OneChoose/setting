@@ -4,7 +4,7 @@
   
     2.将光盘VBoxGuestAdditions.iso加入虚拟机
 
-        2.1点击virtualbox设置->存储->控制器：IDE->属性分配光驱->选择D:\Program Files\Oracle\VirtualBox\VBoxGuestAdditions.iso(这是我virtualbox安装路径下面的文件)    【如果是mac到这里 http://download.virtualbox.org/ 下载VBoxGuestAdditions.iso文件】
+        2.1点击virtualbox设置->存储->控制器：IDE->属性分配光驱->选择D:\Program Files\Oracle\VirtualBox\VBoxGuestAdditions.iso(这是我virtualbox安装路径下面的文件)    【如果是mac到这里 http://download.virtualbox.org/virtualbox/5.2.8/VBoxGuestAdditions_5.2.8.iso 下载VBoxGuestAdditions.iso文件】
         
       
     3.安装 VBoxGuestAdditions.iso镜像并挂载

@@ -14,6 +14,20 @@
     [root@localhost ~]# ps aux | grep gogs
     root      5444  0.3  1.5 266992 29764 pts/2    Sl   13:18   0:00 ./gogs web
     root      5544  0.0  0.0 112664   972 pts/0    S+   13:20   0:00 grep --color=auto gogs
+    
+## supervisor安装配置gogs
+    [program:gogs]
+    command     = /root/gogs/gogs web #运行的命令
+    directory   = /root/gogs/ #gogs程序所在的目录，执行command的目录
+    user        = root
+    startsecs   = 300 #程序重启时候停留在runing状态的秒数
+    autostart=true    #supervisor启动的时候是否随着同时启动
+    autorestart=true   #当程序跑出exit的时候，这个program会自动重启
+    redirect_stderr         = true
+    stdout_logfile_maxbytes = 50MB
+    stdout_logfile_backups  = 10
+    stdout_logfile          = /root/gogs/log/app.log
+
 
 ## tomcat + java安装
     #java安装

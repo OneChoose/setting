@@ -17,9 +17,9 @@
     
 ## supervisor安装配置gogs
     [program:gogs]
-    command     = /root/gogs/gogs web #运行的命令
-    directory   = /root/gogs/ #gogs程序所在的目录，执行command的目录
-    user        = root
+    command     = /root/gogs/gogs web #运行的命令
+    directory   = /root/gogs/ #gogs程序所在的目录，执行command的目录
+    user        = root
     startsecs   = 300 #程序重启时候停留在runing状态的秒数
     autostart=true    #supervisor启动的时候是否随着同时启动
     autorestart=true   #当程序跑出exit的时候，这个program会自动重启

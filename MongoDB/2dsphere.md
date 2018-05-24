@@ -24,7 +24,7 @@
         near:{type:"Point",coordinates:[106.548089,29.573017]},
         spherical:true,
         minDistance:0,
-        maxDistance:9000,
+        maxDistance:3000,
         })
 
 # 结果

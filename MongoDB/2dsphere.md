@@ -1,14 +1,14 @@
- #创建2dsphere索引
-  `db.sphere.ensureIndex({"sp":"2dsphere"})
+ # 创建2dsphere索引
+  ` db.sphere.ensureIndex({"sp":"2dsphere"})
  
- #插入Point数据
-  `db.sphere.insert({name:"A",sp:{type:"Point",coordinates:[105.754484701156,41.689607057699]}})
-  `db.sphere.insert({name:"B",sp:{type:"Point",coordinates:[105.304045248031,41.783456183240]}})
-  `db.sphere.insert({name:"C",sp:{type:"Point",coordinates:[105.084318685531,41.389027478812]}})
-  `db.sphere.insert({name:"D",sp:{type:"Point",coordinates:[105.831388998031,41.285916385493]}})
-  `db.sphere.insert({name:"E",sp:{type:"Point",coordinates:[106.128706502914,42.086868474465]}})
-  `db.sphere.insert({name:"F",sp:{type:"Point",coordinates:[105.431074666976,42.009365053841]}})
-  `db.sphere.insert({name:"G",sp:{type:"Point",coordinates:[104.705977010726,41.921549795110]}})
+ # 插入Point数据
+  ` db.sphere.insert({name:"A",sp:{type:"Point",coordinates:[105.754484701156,41.689607057699]}})
+  ` db.sphere.insert({name:"B",sp:{type:"Point",coordinates:[105.304045248031,41.783456183240]}})
+  ` db.sphere.insert({name:"C",sp:{type:"Point",coordinates:[105.084318685531,41.389027478812]}})
+  ` db.sphere.insert({name:"D",sp:{type:"Point",coordinates:[105.831388998031,41.285916385493]}})
+  ` db.sphere.insert({name:"E",sp:{type:"Point",coordinates:[106.128706502914,42.086868474465]}})
+  ` db.sphere.insert({name:"F",sp:{type:"Point",coordinates:[105.431074666976,42.009365053841]}})
+  ` db.sphere.insert({name:"G",sp:{type:"Point",coordinates:[104.705977010726,41.921549795110]}})
 
 
   `（1）geoNear:我们要查询的集合名称 

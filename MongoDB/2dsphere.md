@@ -16,6 +16,7 @@
     （3）spherical:是个布尔值，如果为true，表示将计算实际的物理距离比如两点之间有多少km,若为false,则会基于点的单位进行计算 
     （4）minDistance:搜索的最小距离，这里的单位是米 
     （5）maxDistance:搜索的最大距离
+    （6）limit 
 
         db.runCommand({
             geoNear:"sphere",
@@ -23,6 +24,7 @@
             spherical:true,
             minDistance:25000,
             maxDistance:40000,
+            limit:11
         })
 
 # 结果

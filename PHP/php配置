@@ -1,6 +1,6 @@
 # PHP7中php.ini
 
-    ######避免PHP信息暴露在http头中
+    避免PHP信息暴露在http头中
     expose_php = Off
     
     ######避免暴露php调用mysql的错误信息

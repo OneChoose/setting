@@ -1,0 +1,17 @@
+#!/bin/bash
+cd /data/git_vue_code/hytx_site
+while true
+do
+        git pull |grep -v "Already up-to-date."
+
+        if [ $? == 0 ];then
+                npm run build
+                if [ $? == 0 ];then
+                        cp -r ./dist/* /data/www/hytx/public/site/
+                        echo "0:npm run build success!!!"
+                fi
+        else
+                echo "1:nothing"
+                sleep 3
+        fi
+done
